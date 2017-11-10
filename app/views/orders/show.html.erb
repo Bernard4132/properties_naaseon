@@ -1,0 +1,69 @@
+
+<div class="container">
+<div class="row justify-content-center" style="margin-top: 80px;">
+  <div class="col-md-6 col-md-offset-3">
+<div class="holdformsi">
+<h2 style="text-align: left; font-family: 'Poppins', sans-serif;">Order details</h2>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @order.title %>
+</p>
+
+<p>
+  <strong>Propertytype:</strong>
+  <%= @order.propertytype %>
+</p>
+
+<p>
+  <strong>Othersspecify:</strong>
+  <%= @order.othersspecify %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @order.location %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @order.message %>
+</p>
+
+<p>
+  <strong>Paymentoptions:</strong>
+  <%= @order.paymentoptions %>
+</p>
+
+<hr>
+<h3>Contact Details</h3>
+
+<p>
+  <strong>Name:</strong>
+  <%= @order.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @order.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @order.phone %>
+</p>
+
+<p>
+  <strong>Accepted:</strong>
+  <%= @order.accept %>
+</p>
+
+<p style="text-align: right;"><%= link_to "Confirm Request" , fulfill_order_path(@order), method: :post, :class => "btn btn-success" %></p>
+
+</div>
+</div>
+</div>
+
+</div>

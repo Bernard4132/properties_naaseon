@@ -153,7 +153,12 @@ box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.4);
  <body>
 
  <!-- Navigation -->
-
+<% if notice %>
+<div class="alert alert-success alert-dismissible" style="position: absolute; top: 100px; z-index: 999;" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <p class="notice"><%= notice %></p>
+</div>
+<% end %>
 
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

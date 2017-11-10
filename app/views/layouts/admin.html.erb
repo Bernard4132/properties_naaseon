@@ -1,0 +1,323 @@
+<head>
+    <title>Naaseon Properties</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Latest compiled and minified CSS -->
+    <%= javascript_include_tag 'application' %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+     <%= stylesheet_link_tag 'full-slider.css', :media => 'all' %>
+    <script src="https://use.fontawesome.com/fc6d352727.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <style type="text/css">
+
+ a {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+  .navbackground{
+     background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.89);
+-moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.89);
+box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.89);
+  }
+
+
+
+.navbar-brand1 {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+
+
+
+.navbar-light .navbar-brand1{
+color: #000; 
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+}
+
+.navbar-scroll{
+color: #000; 
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: white;
+}
+
+.navbar-light .navbar-scroll:focus, .navbar-light .navbar-scroll:hover {
+  color: #343a40;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #b56301;
+  font-weight: 300;
+  font-family: 'Asap Condensed', sans-serif;
+  transition: border-color .5s ease-in-out;
+    -webkit-transition: border-color .5s ease-in-out;
+    -moz-transition: border-color .5s ease-in-out;
+  border-bottom: 4px solid transparent;
+}
+
+.navlinkscroll{
+  color: #343a40;
+  
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #b56301;
+  font-weight: 700;
+  border-bottom-color:#b56301;
+}
+
+ .navbar-light .navbar-nav .nav-link:hover {
+  color: #b56301;
+  font-weight: 700;
+  border-bottom-color: #b56301;
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #b56301;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.holdformsi{
+  padding: 50px;
+}
+
+
+
+.js-reveal {
+  opacity: 1;
+  transition: opacity .7s ease-in, margin-top .7s ease-out;
+}
+
+.js-reveal--hidden {
+  opacity: 0;
+  margin-top: 3em;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.farmprodssection{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+
+.landhypes{
+  margin-top: 15px;
+}
+
+.infoaddlh{
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.ayoon{
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.4);
+box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.4);
+}
+
+.mycolorbtnw{
+  background-color: #ffffff;
+  color: #000;
+}
+
+.mycolorbtnw:hover{
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.mycolorbtnw:active{
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.foothead{
+  color: white;
+  font-family: 'Asap Condensed', sans-serif; 
+}
+
+@media only screen and (min-width : 100px) and (max-width : 600px) {
+
+  .navbar-light .navbar-brand1{
+font-size: 14px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+}
+
+
+.innerctact{
+  background-color: #ddd;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  min-height: 200px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+
+}
+
+</style>
+
+ 
+  <body>
+
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top navbackground">
+      <div class="container">
+        <a class="navbar-brand1" href="/" style=""><img src="https://res.cloudinary.com/nikasemo/image/upload/v1509801052/naaseonlogo231_nrinug.png" width="75px" height="55px" style="margin-right:5px;">
+          <span style="position:relative; top: 3px; color: #b56301;">Naaseon Properties</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/fabricsandclothes">Our Properties</a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="/mydashboard">My Dashboard</a>
+            </li>
+            <li class="nav-item">
+            <%= link_to "Log Out", destroy_user_session_path, :method => :delete, :class => "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts/new">Contact Us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/orders/new">Request or Sell</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <%= yield %>
+
+
+
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-3">
+          <div class="innerfooter">
+            <h5 class="foothead">About Us</h5>
+            <ul style="list-style:none; padding-left:0;">
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">Overview</a></li>
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">Staff</a></li>
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">Board of Directors</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="innerfooter">
+            <h5 class="foothead">Top Products</h5>
+            <ul style="list-style:none; padding-left:0;">
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">Our Properties</a></li>
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">Request or Sell</a></li>
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">New Properties</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="innerfooter">
+            <h5 class="foothead">Support</h5>
+            <ul style="list-style:none; padding-left:0;">
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">Contact Us</a></li>
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">FAQ's</a></li>
+            <li><a href="" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">Terms and Conditions</a></li>
+            <li><a href="/users/sign_in" style="color: white; font-weight: 300; font-size: 14px; text-decoration:none;">Admin</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="innerfooter">
+             <h5 class="foothead">Visit Our Social Media</h5>
+             <span><a href=""><i class="fa fa-facebook-official fa-2x" style="color: white; margin-right: 5px;" aria-hidden="true"></i></a></span>
+             <span><a href=""><i class="fa fa-twitter-square fa-2x" style="color: white; margin-right: 5px;" aria-hidden="true"></i></a></span>
+             <span><a href=""><i class="fa fa-instagram fa-2x" style="color: white; margin-right: 5px;" aria-hidden="true"></i></a></span>
+             <span><a href=""><i class="fa fa-google-plus-square fa-2x" style="color: white; margin-right: 5px;" aria-hidden="true"></i></a></span>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-sm-12">
+        <p class="m-0 text-center text-white">Copyright &copy; Naaseon Properties, 2017</p>
+      </div>
+    </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  
+
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <%= javascript_include_tag 'scroll-reveal.js' %>
+
+    <script>
+    $.fn.scrollReveal();  
+    </script>
+
+  </body>
+</html>

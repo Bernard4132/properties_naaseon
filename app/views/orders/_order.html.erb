@@ -1,0 +1,27 @@
+<style type="text/css">
+
+.projpartial{
+	width: 100%;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 12px;
+	margin: 15px;
+	border: 1px solid #cccccc;
+}
+
+
+</style>
+
+<div class="col-lg-12">
+	<div class="projpartial">
+	  <div class="row">
+      <div class="col-sm-12 col-lg-12">
+       <span style="margin-bottom: 10px;"><strong>Property Request type:</strong> <%= order.title %></span><br>
+       <span style="margin-bottom: 10px;"><strong>Property type:</strong> <%= order.propertytype %> Yards</span><br>
+       <p style="margin-top: 20px;"><%= link_to "See Request" , order, :class => "btn btn-primary btn-sm" %>
+       <%= link_to "Confirm Request" , fulfill_order_path(order), method: :post, :class => "btn btn-success btn-sm" %>
+      </div>
+    </div>
+	
+</div>
+</div>

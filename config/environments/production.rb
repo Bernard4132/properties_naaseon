@@ -22,8 +22,35 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
-  # Do not fallback to assets pipeline if a precompiled asset is missed.
+   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
+
+   config.action_mailer.default_url_options = { host: 'www.naaseonproperties.com' }
+
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+     :address    => 'smtp.sendgrid.net',
+     :port       => '587',
+     :authentication  => :plain,
+     :user_name => ENV['SENDGRID_USERNAME'],
+     :password  => ENV['SENDGRID_PASSWORD'],
+     :domain   =>  'heroku.com',
+     :enable_starttls_auto => true
+  }
+  
+  
+  # Set to :debug to see everything in the log.
+  config.log_level = :info
+
+  # Prepend all log lines with the following tags.
+  # config.log_tags = [ :subdomain, :uuid ]
+  # config/environments/production.rb
+  config.action_mailer.default_url_options = { :host => 'naaseonproperties.com' }
+  # Use a different logger for distributed setups.
+  # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
+  config.action_mailer.asset_host = 'http://naaseonproperties.com'
+
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
