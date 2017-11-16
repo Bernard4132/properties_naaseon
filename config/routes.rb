@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   match 'about', to: 'static_pages#about', via: 'get'
   match 'mydashboard', to: 'static_pages#mydashboard', via: 'get'
   match 'ourproperties', to: 'static_pages#ourproperties', via: 'get'
+  match 'lands', to: 'static_pages#lands', via: 'get'
 end

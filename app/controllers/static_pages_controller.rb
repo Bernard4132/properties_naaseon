@@ -17,4 +17,7 @@ def mydashboard
   end		
 end
 
+def lands	
+end
+
 end
