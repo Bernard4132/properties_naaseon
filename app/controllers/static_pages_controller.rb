@@ -20,4 +20,7 @@ end
 def lands	
 end
 
+def propertiesonsale
+end
+
 end
