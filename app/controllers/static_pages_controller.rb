@@ -23,4 +23,8 @@ end
 def propertiesonsale
 end
 
+def property_at_Bellevue_estate
+  @contact = Contact.new	
+end
+
 end

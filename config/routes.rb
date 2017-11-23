@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   match 'ourproperties', to: 'static_pages#ourproperties', via: 'get'
   match 'lands', to: 'static_pages#lands', via: 'get'
   match 'propertiesonsale', to: 'static_pages#propertiesonsale', via: 'get'
+  match 'property_at_Bellevue_estate', to: 'static_pages#property_at_Bellevue_estate', via: 'get'
 end
